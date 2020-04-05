@@ -32,7 +32,7 @@ This gives us access to `/authors/:author_id/posts/new`, and a `new_author_post_
 We have the route, so now we need to update our `posts_controller#new` action to handle the `:author_id` parameter.
 
 ```ruby
-# controllers/posts_controller.rb
+# controllers/posts_controller.rbw
 
 def new
   @post = Post.new(author_id: params[:author_id])
